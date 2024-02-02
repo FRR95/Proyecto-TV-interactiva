@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+  
+}
+
+#content {
+    background-color: aqua;
+
+}
+
+#TvSection {
+    background-color: rgb(165, 127, 255);
+}
+
+#TvSectionTop {
+    background-color: rgb(219, 62, 159);
+}
+#TvScreen {
+    
+    border: 1px solid black;
+    width:50em;
+    height:30em;
+    padding: 1em;
+}
+
+.ScreenBlack{
+background-color: black;
+}
+#TvSectionBottom{
+    background-color: rgb(219, 203, 62);
+}
+
+#remoteControlSection {
+    background-color: rgb(54, 211, 80);
+
+}
+
+#remoteControlSectionTop {
+    background-color: rgb(54, 211, 80);
+}
+
+#remoteControlSectionBottom {
+    background-color: rgb(54, 96, 211);
+    padding:1em;
+}
+
+#RemoteControl{
+ background-color: rgb(211, 54, 54);
+ border: 1px solid black;
+ 
+ width:13em;
+ height:25em;
+}
+.buttonOnOff{
+    width:2em;
+    height:2em;
+    background-color: rgb(222, 121, 121) ;
+    border-radius: 50%;
+    border:1px solid black;
+    transition: 0.5s;   
+}
+.buttonOnOff:hover{
+    background-color: rgb(83, 9, 9) ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.button{
+    width:2em;
+    height:2em;
+    background-color: rgb(222, 121, 121) ;
+    border-radius: 50%;
+    border:1px solid black;
+    transition: 0.5s;
+
+}
+
+.button:hover{
+    background-color: rgb(83, 9, 9) ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.channelDefault{
+background-color: rgb(255, 0, 0);
+}
+.channel1{
+background-color: bisque;
+}
+.channel2{
+background-color: rgb(196, 246, 255);
+}
+.channel3{
+background-color: rgb(52, 180, 47);
+}
+.channel4{
+background-color: rgb(214, 32, 214);
+}
+.channel5{
+background-color: rgb(126, 146, 236);
+}
+.channel6{
+background-color: rgb(87, 72, 5);
+}
+
+
