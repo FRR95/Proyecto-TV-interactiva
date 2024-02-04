@@ -1,14 +1,14 @@
 html{
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-color: black;
 }
 body {
     margin: 0;
     padding: 0;
-
+    background-color: black;
 }
 
-header {
-    background-color: brown;
+#VolumeSection {
+    margin-top: 18em;
 }
 
 .VolBar {
@@ -16,191 +16,412 @@ header {
     height: 2em;
     border: 0.2px solid black;
     margin: 1em;
+    display: none;
+    animation: hideAnimationVolumeMuted 0s ease-in 2s;
+    animation-fill-mode: forwards;
 }
+
 
 
 .VolBar.VolBarLighted1 {
     background-color: chartreuse;
     width: 3em;
-
+    display: block;
+    animation: hideAnimationVolume 0s ease-in 2s;
+    animation-fill-mode: forwards;
 }
+
+
 
 .VolBar.VolBarLighted2 {
     background-color: rgb(99, 196, 2);
     width: 5em;
+    display: block;
+    animation: hideAnimationVolume1 0s ease-in 2s;
+    animation-fill-mode: forwards;
 }
 
 .VolBar.VolBarLighted3 {
     background-color: rgb(67, 134, 0);
     width: 7em;
+    display: block;
+    animation: hideAnimationVolume2 0s ease-in 2s;
+    animation-fill-mode: forwards;
 }
 
 .VolBar.VolBarLighted4 {
     background-color: rgb(41, 82, 0);
     width: 9em;
+    display: block;
+    animation: hideAnimationVolume3 0s ease-in 2s;
+    animation-fill-mode: forwards;
 }
 
 .VolBar.VolBarLighted5 {
     background-color: rgb(31, 61, 0);
     width: 11em;
+    display: block;
+    animation: hideAnimationVolume4 0s ease-in 2s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes hideAnimationVolumeMuted {
+    to {
+        display: none;
+
+    }
+}
+
+@keyframes hideAnimationVolume {
+    to {
+        display: none;
+
+    }
+}
+
+@keyframes hideAnimationVolume1 {
+    to {
+        display: none;
+
+    }
+}
+
+@keyframes hideAnimationVolume2 {
+    to {
+        display: none;
+
+    }
+}
+
+@keyframes hideAnimationVolume3 {
+    to {
+        display: none;
+
+    }
+}
+
+@keyframes hideAnimationVolume4 {
+    to {
+        display: none;
+
+    }
+} 
 
 #content {
-    background-color: aqua;
-
+   
+    margin: 0px;
 }
 
-#TvSection {
-    background-color: rgb(165, 127, 255);
-}
 
-#TvSectionTop {
-    background-color: rgb(219, 62, 159);
+
+.TvBackgroundlightOff {
+    background-color: rgb(0, 0, 0);
+}
+.TvBackgroundlightOn {
+    background-image: url(/img/flashinglight.gif);
+    background-size: 100% auto;
 }
 
 #TvScreen {
 
-    border: 1px solid black;
+    border: 1em solid rgb(29, 28, 28);
     width: 50em;
     height: 30em;
-    padding: 1em;
+    
+    font-family: monospace;
+    color: rgb(67, 110, 1);
 }
 
 
+
+#TvScreenContentMid {
+    height: 21em;
+}
 
 #TvSectionBottom {
-    background-color: rgb(219, 203, 62);
+   
+    height: 4em;
 }
 
-#remoteControlSection {
-    background-color: rgb(54, 211, 80);
-
+#TvSectionBottomMid {
+    background-color: rgb(29, 28, 28);
+    width: 3em;
 }
+
+
 
 #remoteControlSectionTop {
-    background-color: rgb(165, 231, 176);
-    height:20em;
+   
+    height: 25em;
 }
 
 #remoteControlSectionBottom {
-    background-color: rgb(54, 96, 211);
+    
     padding: 1em;
 }
 
 #RemoteControl {
-    background-color: rgb(211, 54, 54);
-    border: 1px solid black;
+    background-color: rgb(73 71 71);
+    border: 3px solid rgb(202, 202, 202);
     border-radius: 0.7em;
     width: 13em;
     height: 25em;
+    color: white;
 }
-
+.ChannelVolumePad{
+    background-color: #757575;
+    padding: 0.4em;
+    border-radius: 1em;
+   
+}
 .buttonOnOff {
     width: 2em;
     height: 2em;
-    background-color: rgb(222, 121, 121);
+    background-color: rgb(255, 0, 0);
     border-radius: 50%;
     border: 1px solid black;
-    transition: 0.5s;
+    transition: 0.2s;
+  
 }
 
 .buttonOnOff:hover {
-    background-color: rgb(83, 9, 9);
+    background-color: rgb(212, 86, 86);
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
+.buttonOnOff:active {
+    background-color: rgb(255, 0, 0);
+  
+}
 
+#powerlight{
+height: 0.5em;
+width: 0.5em;
+border-radius: 50%;
+border: 1px solid black;
+margin-left:5em;
+}
+
+.powerlightoff{
+background-color: grey;
+}
+
+.powerlighton{
+background-color: rgb(255, 0, 0);
+ }
+ 
 .button {
     width: 2em;
     height: 2em;
-    background-color: rgb(222, 121, 121);
+    background-color: rgb(0, 0, 0);
     border-radius: 50%;
     border: 1px solid black;
-    transition: 0.5s;
+    transition: 0.2s;
 
 }
 
 .button:hover {
-    background-color: rgb(83, 9, 9);
+     background-color: rgb(88, 87, 87); 
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
-.buttonVolume {
+.button:active{
+    background-color: rgb(46, 44, 44);
+}
+.buttonstyle {
     width: 2em;
     height: 2em;
-    background-color: rgb(222, 121, 121);
+    background-color: rgb(0, 0, 0);
     border-radius: 50%;
     border: 1px solid black;
-    transition: 0.5s;
+    transition: 0.2s;
 
 }
 
-.buttonVolume:hover {
-    background-color: rgb(83, 9, 9);
+.buttonstyle:hover {
+    background-color: rgb(88, 87, 87);
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
-.buttonChannel {
-    width: 2em;
-    height: 2em;
-    background-color: rgb(222, 121, 121);
-    border-radius: 50%;
-    border: 1px solid black;
-    transition: 0.5s;
-
+.buttonstyle:active{
+    background-color: rgb(46, 44, 44);
 }
 
-.buttonChannel:hover {
-    background-color: rgb(83, 9, 9);
-    cursor: pointer;
-    transition: 0.5s;
-}
+
 
 
 
 .ScreenBlack {
-    background-color: black;
+    background-color: rgb(94, 92, 92);
 }
 
 .channelDefault {
     background-image: url(/img/whitenoise.gif);
 }
 
+#ScreenInfo1 {
+
+    display: none;
+}
+
+#ScreenInfo2 {
+
+    display: none;
+}
+
+#ScreenInfo3 {
+
+    display: none;
+}
+
+#ScreenInfo4 {
+
+    display: none;
+}
+
+#ScreenInfo5 {
+
+    display: none;
+}
+
+#ScreenInfo6 {
+
+    display: none;
+}
+
 .channel1 {
-    /* background-image: url(/img/netflixgif.gif);
-    background-size: 100% auto;  */
-    background-color: beige;
+    background-image: url(/img/netflixgif.gif);
+    background-size: 100% auto; 
+    /* background-color: beige; */
+
+
+    #ScreenInfo1 {
+        display: block;
+        animation: hideAnimationChannel1 0s ease-in 2s;
+        animation-fill-mode: forwards;
+    }
+
+
+
+}
+
+@keyframes hideAnimationChannel1 {
+    to {
+        display: none;
+        width: 0;
+        height: 0;
+    }
 }
 
 .channel2 {
-    /* background-image: url(/img/hbogif.gif);
-    background-size: 100% auto;  */
-    background-color: rgb(255, 255, 175);
+    background-image: url(/img/hbogif.gif);
+    background-size: 100% auto; 
+    /* background-color: rgb(255, 255, 175); */
+
+    #ScreenInfo2 {
+
+        display: block;
+        animation: hideAnimationChannel2 0s ease-in 2s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes hideAnimationChannel2 {
+    to {
+        display: none;
+        width: 0;
+        height: 0;
+    }
 }
 
 .channel3 {
-    /* background-image: url(/img/amazonprimevideogif.gif);
-    background-size: 100% auto;  */
-    background-color: rgb(255, 255, 129);
+    background-image: url(/img/amazonprimevideogif.gif);
+    background-size: 100% auto; 
+    /* background-color: rgb(255, 255, 129); */
+
+    #ScreenInfo3 {
+
+        display: block;
+        animation: hideAnimationChannel3 0s ease-in 2s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes hideAnimationChannel3 {
+    to {
+        display: none;
+        width: 0;
+        height: 0;
+    }
 }
 
 .channel4 {
-    /* background-image: url(/img/canaldeportesgif.gif);
-    background-size: 100% auto;  */
-    background-color: rgb(247, 247, 73);
+    background-image: url(/img/canaldeportesgif.gif);
+    background-size: 100% auto; 
+    /* background-color: rgb(247, 247, 73); */
+
+    #ScreenInfo4 {
+
+        display: block;
+        animation: hideAnimationChannel4 0s ease-in 2s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes hideAnimationChannel4 {
+    to {
+        display: none;
+        width: 0;
+        height: 0;
+    }
 }
 
 .channel5 {
-    /* background-image: url(/img/canalmusicagif.gif);
-    background-size: 100% auto;  */
-    background-color: rgb(255, 255, 39);
+    background-image: url(/img/canalmusicagif.gif);
+    background-size: 100% auto; 
+    /* background-color: rgb(255, 255, 39); */
+
+    #ScreenInfo5 {
+
+        display: block;
+        animation: hideAnimationChannel5 0s ease-in 2s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes hideAnimationChannel5 {
+    to {
+        display: none;
+        width: 0;
+        height: 0;
+    }
 }
 
 .channel6 {
-    /* background-image: url(/img/canalcinegif.gif);
-    background-size: 100% auto;  */
-    background-color: rgb(252, 252, 0);
+    background-image: url(/img/canalcinegif.gif);
+    background-size: 100% auto; 
+    /* background-color: rgb(252, 252, 0); */
+
+    #ScreenInfo6 {
+
+        display: block;
+        animation: hideAnimationChannel6 0s ease-in 2s;
+        animation-fill-mode: forwards;
+    }
 }
+
+@keyframes hideAnimationChannel6 {
+    to {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
+
+.channelinfo{
+background-color: #ebebeb;
+}
+
