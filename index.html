@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -12,32 +17,53 @@
 </head>
 
 <body>
-    <header>
-
+    <header class=" container-fluid d-flex  justify-content-center align-items-center">
+        <div id="" class="row d-flex  justify-content-center align-items-center">
+            <!-- <div id="VolumeBar" class="VolBar col d-flex  justify-content-center align-items-center bv"></div> -->
+        </div>
     </header>
 
 
 
 
-    <section id="content" class=" container-fluid d-flex  justify-content-center align-items-center">
+    <section id="content" class=" col d-flex  justify-content-center align-items-center">
 
-        <div class="col d-flex  justify-content-center align-items-center">
+        <div class="  col d-flex  justify-content-center align-items-center">
             <div id="TvSection" class=" col-8 d-flex  justify-content-center align-items-center">
                 <div class="row d-flex  justify-content-center align-items-center">
                     <div id="TvSectionTop" class="row-4 d-flex  justify-content-center align-items-center">
-                        <div id="TvScreen" class="d-flex justify-content-center align-items-center ScreenBlack">
-                            <p>TV SCREEN</p>
+                        <div id="TvScreen" class="row  d-flex justify-content-center align-items-center ScreenBlack">
+                            <div class="row-2 container-fluid d-flex justify-content-center align-items-center">
+                                1
+                            </div>
+                            <div class="row-8 container-fluid d-flex justify-content-center align-items-center">
+                                2
+                            </div>
+                            <div class="container-fluid row-2 d-flex justify-content-center align-items-center">
+                                <div class=" col d-flex justify-content-center align-items-center">
+                                    <div id="" class=" col-3 d-flex  justify-content-center align-items-center bv">
+
+                                    </div>
+                                    <div id="VolumeBar"
+                                        class="VolBar col-6 d-flex  justify-content-center align-items-center bv">
+                                        
+                                    </div>
+                                    <div id="" class=" col-3 d-flex  justify-content-center align-items-center bv">
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
-                    <div id="TvSectionBottom" class="row-8 d-flex  justify-content-center align-items-center">
+                    <div id="TvSectionBottom" class="row-8 d-flex  justify-content-center align-items-center ">
                         <p>TvSectionBottom</p>
 
                     </div>
                 </div>
             </div>
-            <div id="remoteControlSection"
-                class=" container-fluid col-4 d-flex  justify-content-center align-items-center">
+            <div id="remoteControlSection" class="  col-4 d-flex  justify-content-center align-items-center">
                 <div class="row d-flex  justify-content-center align-items-center">
                     <div id="remoteControlSectionTop" class="row-8 d-flex  justify-content-center align-items-center">
                         <p>remoteControlSectionTop</p>
@@ -45,14 +71,15 @@
 
                     <div id="remoteControlSectionBottom"
                         class="row-4 d-flex  justify-content-center align-items-center">
-                        <div id="RemoteControl" class=" d-flex  justify-content-center align-items-center">
+                        <div id="RemoteControl" class=" d-flex  justify-content-center ">
                             <div id="remoteControlContent" class="row d-flex justify-content-center align-items-center">
                                 <div id="remoteControlContentTop"
                                     class=" row-2 d-flex justify-content-center align-items-center">
                                     <div class=" col d-flex justify-content-center align-items-center">
                                         <div id="remoteControlContentTopLeft"
                                             class=" col-4 d-flex justify-content-center align-items-center">
-                                            <div id="powerButton" class="d-flex justify-content-center align-items-center buttonOnOff">
+                                            <div id="powerButton"
+                                                class="d-flex justify-content-center align-items-center buttonOnOff">
                                                 &#9211;
                                             </div>
                                         </div>
@@ -66,20 +93,71 @@
                                 </div>
                                 <div id="remoteControlContentMid"
                                     class=" row-2 d-flex justify-content-center align-items-center">
-
-                                </div>
-                                <div id="remoteControlContentBottom"
-                                    class="row-10 d-flex justify-content-center align-items-center">
                                     <div class="col d-flex justify-content-center align-items-center">
                                         <div class="col-6 d-flex justify-content-center align-items-center">
-                                            <div id="channel1" class="button d-flex justify-content-center align-items-center">1</div>
-                                            <div id="channel2" class="button d-flex justify-content-center align-items-center">2</div>
-                                            <div id="channel3" class="button d-flex justify-content-center align-items-center">3</div>
+                                            <div class="row-12 me-2">
+                                                <div id="VolumePlus"
+                                                    class="buttonVolume d-flex justify-content-center align-items-center mb-1">
+                                                    +
+                                                </div>
+                                                <div id="" class=" d-flex justify-content-center align-items-center">VOL
+                                                </div>
+                                                <div id="VolumeMinus"
+                                                    class="buttonVolume d-flex justify-content-center align-items-center mt-1">
+                                                    -
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-center align-items-center">
+                                                <div class="row-12 ms-2">
+                                                    <div id="ChannelPlus"
+                                                        class="buttonChannel d-flex justify-content-center align-items-center mb-1">
+                                                        +
+                                                    </div>
+                                                    <div id=""
+                                                        class=" d-flex justify-content-center align-items-center">CH
+                                                    </div>
+                                                    <div id="ChannelMinus"
+                                                        class="buttonChannel d-flex justify-content-center align-items-center mt-1">
+                                                        -
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="remoteControlContentBottom"
+                                    class="container-fluid d-flex justify-content-center align-items-center">
+                                    <div class="col d-flex justify-content-center align-items-center">
+                                        <div class="col-6 d-flex justify-content-center align-items-center">
+                                            <div class="row-12 ">
+                                                <div id="channel1"
+                                                    class="  button d-flex justify-content-center align-items-center mb-2">
+                                                    1
+                                                </div>
+                                                <div id="channel2"
+                                                    class=" button d-flex justify-content-center align-items-center">
+                                                    2
+                                                </div>
+                                                <div id="channel3"
+                                                    class=" button d-flex justify-content-center align-items-center mt-2">
+                                                    3
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="col-6 d-flex justify-content-center align-items-center">
-                                            <div id="channel4" class="button d-flex justify-content-center align-items-center">4</div>
-                                            <div id="channel5" class="button d-flex justify-content-center align-items-center">5</div>
-                                            <div id="channel6" class="button d-flex justify-content-center align-items-center">6</div>
+                                            <div class="row-12 ">
+                                                <div id="channel4"
+                                                    class="button d-flex justify-content-center align-items-center mb-2">
+                                                    4
+                                                </div>
+                                                <div id="channel5"
+                                                    class="button d-flex justify-content-center align-items-center">5
+                                                </div>
+                                                <div id="channel6"
+                                                    class="button d-flex justify-content-center align-items-center mt-2">
+                                                    6
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -92,10 +170,6 @@
 
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

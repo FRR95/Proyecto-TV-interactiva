@@ -1,7 +1,48 @@
+html{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 body {
     margin: 0;
     padding: 0;
-  
+
+}
+
+header {
+    background-color: brown;
+}
+
+.VolBar {
+    width: 2em;
+    height: 2em;
+    border: 0.2px solid black;
+    margin: 1em;
+}
+
+
+.VolBar.VolBarLighted1 {
+    background-color: chartreuse;
+    width: 3em;
+
+}
+
+.VolBar.VolBarLighted2 {
+    background-color: rgb(99, 196, 2);
+    width: 5em;
+}
+
+.VolBar.VolBarLighted3 {
+    background-color: rgb(67, 134, 0);
+    width: 7em;
+}
+
+.VolBar.VolBarLighted4 {
+    background-color: rgb(41, 82, 0);
+    width: 9em;
+}
+
+.VolBar.VolBarLighted5 {
+    background-color: rgb(31, 61, 0);
+    width: 11em;
 }
 
 #content {
@@ -16,18 +57,18 @@ body {
 #TvSectionTop {
     background-color: rgb(219, 62, 159);
 }
+
 #TvScreen {
-    
+
     border: 1px solid black;
-    width:50em;
-    height:30em;
+    width: 50em;
+    height: 30em;
     padding: 1em;
 }
 
-.ScreenBlack{
-background-color: black;
-}
-#TvSectionBottom{
+
+
+#TvSectionBottom {
     background-color: rgb(219, 203, 62);
 }
 
@@ -37,71 +78,129 @@ background-color: black;
 }
 
 #remoteControlSectionTop {
-    background-color: rgb(54, 211, 80);
+    background-color: rgb(165, 231, 176);
+    height:20em;
 }
 
 #remoteControlSectionBottom {
     background-color: rgb(54, 96, 211);
-    padding:1em;
+    padding: 1em;
 }
 
-#RemoteControl{
- background-color: rgb(211, 54, 54);
- border: 1px solid black;
- 
- width:13em;
- height:25em;
+#RemoteControl {
+    background-color: rgb(211, 54, 54);
+    border: 1px solid black;
+    border-radius: 0.7em;
+    width: 13em;
+    height: 25em;
 }
-.buttonOnOff{
-    width:2em;
-    height:2em;
-    background-color: rgb(222, 121, 121) ;
+
+.buttonOnOff {
+    width: 2em;
+    height: 2em;
+    background-color: rgb(222, 121, 121);
     border-radius: 50%;
-    border:1px solid black;
-    transition: 0.5s;   
+    border: 1px solid black;
+    transition: 0.5s;
 }
-.buttonOnOff:hover{
-    background-color: rgb(83, 9, 9) ;
+
+.buttonOnOff:hover {
+    background-color: rgb(83, 9, 9);
     cursor: pointer;
     transition: 0.5s;
 }
 
 
-.button{
-    width:2em;
-    height:2em;
-    background-color: rgb(222, 121, 121) ;
+.button {
+    width: 2em;
+    height: 2em;
+    background-color: rgb(222, 121, 121);
     border-radius: 50%;
-    border:1px solid black;
+    border: 1px solid black;
     transition: 0.5s;
 
 }
 
-.button:hover{
-    background-color: rgb(83, 9, 9) ;
+.button:hover {
+    background-color: rgb(83, 9, 9);
     cursor: pointer;
     transition: 0.5s;
 }
-.channelDefault{
-background-color: rgb(255, 0, 0);
+
+.buttonVolume {
+    width: 2em;
+    height: 2em;
+    background-color: rgb(222, 121, 121);
+    border-radius: 50%;
+    border: 1px solid black;
+    transition: 0.5s;
+
 }
-.channel1{
-background-color: bisque;
+
+.buttonVolume:hover {
+    background-color: rgb(83, 9, 9);
+    cursor: pointer;
+    transition: 0.5s;
 }
-.channel2{
-background-color: rgb(196, 246, 255);
+
+.buttonChannel {
+    width: 2em;
+    height: 2em;
+    background-color: rgb(222, 121, 121);
+    border-radius: 50%;
+    border: 1px solid black;
+    transition: 0.5s;
+
 }
-.channel3{
-background-color: rgb(52, 180, 47);
-}
-.channel4{
-background-color: rgb(214, 32, 214);
-}
-.channel5{
-background-color: rgb(126, 146, 236);
-}
-.channel6{
-background-color: rgb(87, 72, 5);
+
+.buttonChannel:hover {
+    background-color: rgb(83, 9, 9);
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 
+
+.ScreenBlack {
+    background-color: black;
+}
+
+.channelDefault {
+    background-image: url(/img/whitenoise.gif);
+}
+
+.channel1 {
+    /* background-image: url(/img/netflixgif.gif);
+    background-size: 100% auto;  */
+    background-color: beige;
+}
+
+.channel2 {
+    /* background-image: url(/img/hbogif.gif);
+    background-size: 100% auto;  */
+    background-color: rgb(255, 255, 175);
+}
+
+.channel3 {
+    /* background-image: url(/img/amazonprimevideogif.gif);
+    background-size: 100% auto;  */
+    background-color: rgb(255, 255, 129);
+}
+
+.channel4 {
+    /* background-image: url(/img/canaldeportesgif.gif);
+    background-size: 100% auto;  */
+    background-color: rgb(247, 247, 73);
+}
+
+.channel5 {
+    /* background-image: url(/img/canalmusicagif.gif);
+    background-size: 100% auto;  */
+    background-color: rgb(255, 255, 39);
+}
+
+.channel6 {
+    /* background-image: url(/img/canalcinegif.gif);
+    background-size: 100% auto;  */
+    background-color: rgb(252, 252, 0);
+}
