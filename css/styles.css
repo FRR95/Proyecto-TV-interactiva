@@ -122,12 +122,13 @@ padding: 0;
 }
 .TvBackgroundlightOn {
     background-image: url(./../img/flashinglight.gif);
-    background-size: 100% auto;
+    background-size: 50% auto;
+    background-repeat: repeat-x;
 }
 
 #TvScreen {
 
-    border: 1em solid rgb(29, 28, 28);
+    border: 1em solid rgb(67, 65, 65);
     width: 50em;
     height: 30em;
     
@@ -147,9 +148,15 @@ padding: 0;
 }
 
 #TvSectionBottomMid {
-    background-color: rgb(29, 28, 28);
+    background-color: rgb(67, 65, 65);
     width: 3em;
 }
+ #TvSectionBase {
+   background-color: rgb(67, 65, 65);
+   height: 22px;
+   width: 39em;
+
+} 
 
 
 
@@ -177,8 +184,8 @@ padding: 0;
    
 }
 .buttonOnOff {
-    width: 3em;
-    height: 3em;
+    width: 1.9em;
+    height: 1.9em;
     background-color: rgb(255, 0, 0);
     border-radius: 50%;
     border: 1px solid black;
@@ -258,7 +265,7 @@ background-color: rgb(255, 0, 0);
 
 
 .ScreenBlack {
-    background-color: rgb(94, 92, 92);
+    background-color: rgb(37, 37, 37);
 }
 
 .channelDefault {
@@ -318,6 +325,8 @@ background-color: rgb(255, 0, 0);
         height: 0;
     }
 }
+
+
 
 .channel2 {
     background-image: url(./../img/hbogif.gif);
