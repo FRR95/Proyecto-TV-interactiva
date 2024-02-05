@@ -6,7 +6,10 @@ body {
     padding: 0;
     background-color: black;
 }
-
+p{
+margin: 0;
+padding: 0;
+}
 #VolumeSection {
     margin-top: 18em;
 }
@@ -152,8 +155,7 @@ body {
 
 #remoteControlSectionTop {
    
-    height: 25em;
-}
+    height: 18em;}
 
 #remoteControlSectionBottom {
     
@@ -175,8 +177,8 @@ body {
    
 }
 .buttonOnOff {
-    width: 2em;
-    height: 2em;
+    width: 3em;
+    height: 3em;
     background-color: rgb(255, 0, 0);
     border-radius: 50%;
     border: 1px solid black;
@@ -218,6 +220,7 @@ background-color: rgb(255, 0, 0);
     border-radius: 50%;
     border: 1px solid black;
     transition: 0.2s;
+    padding: 1em;
 
 }
 
