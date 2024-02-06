@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interactive TV</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
@@ -20,364 +20,413 @@
 
 
 
-
+    <!-- SECTION CONTENT -->
 
     <section id="content" class="col row  d-flex  justify-content-center align-items-center">
 
-        
-            <div id="TvSection" class="col row row-xs-6 row-sm-6 col-md-8 col-lg-8   d-flex  justify-content-center align-items-center TvBackgroundlightOff">
-                <div class="row d-flex  justify-content-center align-items-center">
-                    <div id="TvSectionTop" class="row-4 d-flex  justify-content-center align-items-center">
-                        <div id="TvScreen" class="row  d-flex justify-content-center align-items-center ScreenBlack">
+        <!-- TV SECTION -->
 
-                            <div id="ScreenInfo1" class=" row   justify-content-center  ">
-                                <div id="TvScreenContentTop"
-                                    class="row-2 container-fluid d-flex justify-content-center align-items-center">
-                                    <div class="col d-flex justify-content-center align-items-center">
-                                        <div class=" channelinfo col-4 d-flex justify-content-center align-items-center text-center me-5">
-                                            <h4>Canal Netflix</h4>
-                                        </div>
-                                        <div id="dateinfo" class=" channelinfo dateinfo col-4 d-flex justify-content-center align-items-center text-center">
-                                            <h4>Fecha</h4>
-                                        </div>
-                                       
+
+        <!-- row-xs-6 row-sm-6 col-md-8 col-lg-8  to responsive structure -->
+
+        <div id="TvSection"
+            class="col row row-xs-6 row-sm-6 col-md-8 col-lg-8   d-flex  justify-content-center align-items-center TvBackgroundlightOff">
+            <div class="row d-flex  justify-content-center align-items-center">
+                <div id="TvSectionTop" class="row-4 d-flex  justify-content-center align-items-center">
+                    <div id="TvScreen" class="row  d-flex justify-content-center align-items-center ScreenBlack">
+                        <!-- SCREEN INFO SECTIONS -->
+                        <div id="ScreenInfo1" class=" row   justify-content-center  ">
+                            <div id="TvScreenContentTop"
+                                class="row-2 container-fluid d-flex justify-content-center align-items-center">
+                                <div class="col d-flex justify-content-center align-items-center">
+                                    <div
+                                        class=" channelinfo col-4 d-flex justify-content-center align-items-center text-center me-2">
+                                        <h4>Canal Netflix</h4>
                                     </div>
-                                </div>
-                                <div id="TvScreenContentMid"
-                                    class="row-8 container-fluid d-flex justify-content-center align-items-center">
-
-                                </div>
-                                <div id="TvScreenContentBottom"
-                                    class="container-fluid row-2 d-flex justify-content-center align-items-center">
-                                    <div class=" col d-flex justify-content-center align-items-center">
-                                        <div id="TvScreenContentBottomTop"
-                                            class=" col-3 d-flex  justify-content-center align-items-center bv">
-
-                                        </div>
-                                        <div id="TvScreenContentBottommid"
-                                            class=" col-6 d-flex  justify-content-center align-items-center bv">
-
-                                        </div>
-                                        <div id="TvScreenContentBottomBottom"
-                                            class=" col-3 d-flex  justify-content-center align-items-center bv">
-
-                                        </div>
+                                    <div id="dateinfo"
+                                        class=" channelinfo dateinfo col-4 d-flex justify-content-center align-items-center text-center">
+                                        <h4>Fecha</h4>
+                                    </div>
+                                    <div id="hourinfo"
+                                        class=" channelinfo dateinfo col-4 d-flex justify-content-center ms-2 align-items-center text-center">
+                                        <h4>Fecha</h4>
                                     </div>
                                 </div>
                             </div>
+                            <div id="TvScreenContentMid"
+                                class="row-8 container-fluid d-flex justify-content-center align-items-center">
 
-                            <div id="ScreenInfo2" class=" row   justify-content-center  ">
-                                <div id="TvScreenContentTop"
-                                    class="row-2 container-fluid d-flex justify-content-center align-items-center">
-                                    <div class="col d-flex justify-content-center align-items-center">
-                                        <div class="channelinfo col-4 d-flex justify-content-center align-items-center me-5">
-                                            <h4>Canal HBO</h4>
-                                        </div>
-                                        <div id="dateinfo1" class="channelinfo col-4 d-flex justify-content-center align-items-center">
-                                            <h4>Fecha</h4>
-                                        </div>
-                                       
+                            </div>
+                            <div id="TvScreenContentBottom"
+                                class="container-fluid row-2 d-flex justify-content-center align-items-center">
+                                <div class=" col d-flex justify-content-center align-items-center">
+                                    <div id="TvScreenContentBottomTop"
+                                        class=" col-3 d-flex  justify-content-center align-items-center bv">
+
                                     </div>
-                                </div>
-                                <div id="TvScreenContentMid"
-                                    class="row-8 container-fluid d-flex justify-content-center align-items-center">
+                                    <div id="TvScreenContentBottommid"
+                                        class=" col-6 d-flex  justify-content-center align-items-center bv">
 
-                                </div>
-                                <div id="TvScreenContentBottom"
-                                    class="container-fluid row-2 d-flex justify-content-center align-items-center">
-                                    <div class=" col d-flex justify-content-center align-items-center">
-                                        <div id="TvScreenContentBottomTop"
-                                            class=" col-3 d-flex  justify-content-center align-items-center bv">
+                                    </div>
+                                    <div id="TvScreenContentBottomBottom"
+                                        class=" col-3 d-flex  justify-content-center align-items-center bv">
 
-                                        </div>
-                                        <div id="TvScreenContentBottommid"
-                                            class=" col-6 d-flex  justify-content-center align-items-center bv">
-
-                                        </div>
-                                        <div id="TvScreenContentBottomBottom"
-                                            class=" col-3 d-flex  justify-content-center align-items-center bv">
-
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="ScreenInfo3" class=" row   justify-content-center  ">
-                                <div id="TvScreenContentTop"
-                                    class="row-2 container-fluid d-flex justify-content-center align-items-center">
-                                    <div class="col d-flex justify-content-center align-items-center">
-                                        <div class="channelinfo col-4 d-flex justify-content-center align-items-center me-5">
-                                            <h4>Canal Amazon Prime</h4>
-                                        </div>
-                                        <div id="dateinfo2" class="channelinfo col-4 d-flex justify-content-center align-items-center">
-                                            <h4>Fecha</h4>
-                                        </div>
-                                     
+                        </div>
+
+                        <div id="ScreenInfo2" class=" row   justify-content-center  ">
+                            <div id="TvScreenContentTop"
+                                class="row-2 container-fluid d-flex justify-content-center align-items-center">
+                                <div class="col d-flex justify-content-center align-items-center">
+                                    <div
+                                        class="channelinfo col-4 d-flex justify-content-center align-items-center me-2">
+                                        <h4>Canal HBO</h4>
                                     </div>
-                                </div>
-                                <div id="TvScreenContentMid"
-                                    class="row-8 container-fluid d-flex justify-content-center align-items-center">
+                                    <div id="dateinfo1"
+                                        class="channelinfo col-4 d-flex justify-content-center align-items-center">
+                                        <h4>Fecha</h4>
+                                    </div>
+
+                                    <div id="hourinfo1"
+                                        class=" channelinfo dateinfo col-4 d-flex justify-content-center ms-2  align-items-center text-center">
+                                        <h4>Fecha</h4>
+                                    </div>
 
                                 </div>
-                                <div id="TvScreenContentBottom"
-                                    class="container-fluid row-2 d-flex justify-content-center align-items-center">
-                                    <div class=" col d-flex justify-content-center align-items-center">
-                                        <div id="TvScreenContentBottomTop"
-                                            class=" col-3 d-flex  justify-content-center align-items-center bv">
+                            </div>
+                            <div id="TvScreenContentMid"
+                                class="row-8 container-fluid d-flex justify-content-center align-items-center">
 
-                                        </div>
-                                        <div id="TvScreenContentBottommid"
-                                            class=" col-6 d-flex  justify-content-center align-items-center bv">
+                            </div>
+                            <div id="TvScreenContentBottom"
+                                class="container-fluid row-2 d-flex justify-content-center align-items-center">
+                                <div class=" col d-flex justify-content-center align-items-center">
+                                    <div id="TvScreenContentBottomTop"
+                                        class=" col-3 d-flex  justify-content-center align-items-center bv">
 
-                                        </div>
+                                    </div>
+                                    <div id="TvScreenContentBottommid"
+                                        class=" col-6 d-flex  justify-content-center align-items-center bv">
 
-                                        <div id="TvScreenContentBottomBottom"
-                                            class=" col-3 d-flex  justify-content-center align-items-center bv">
+                                    </div>
+                                    <div id="TvScreenContentBottomBottom"
+                                        class=" col-3 d-flex  justify-content-center align-items-center bv">
 
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="ScreenInfo4" class=" row   justify-content-center  ">
-                                <div id="TvScreenContentTop"
-                                    class="row-2 container-fluid d-flex justify-content-center align-items-center">
-                                    <div class="col d-flex justify-content-center align-items-center">
-                                        <div class="channelinfo col-4 d-flex justify-content-center align-items-center me-5">
-                                            <h4>Canal Deportes</h4>
-                                        </div>
-                                        <div id="dateinfo3" class="channelinfo col-4 d-flex justify-content-center align-items-center">
-                                            <h4>Fecha</h4>
-                                        </div>
-                                    
+                        </div>
+                        <div id="ScreenInfo3" class=" row   justify-content-center  ">
+                            <div id="TvScreenContentTop"
+                                class="row-2 container-fluid d-flex justify-content-center align-items-center">
+                                <div class="col d-flex justify-content-center align-items-center">
+                                    <div
+                                        class="channelinfo col-4 d-flex justify-content-center align-items-center me-2">
+                                        <h4>Canal Amazon Prime</h4>
                                     </div>
-                                </div>
-                                <div id="TvScreenContentMid"
-                                    class="row-8 container-fluid d-flex justify-content-center align-items-center">
+                                    <div id="dateinfo2"
+                                        class="channelinfo col-4 d-flex justify-content-center align-items-center">
+                                        <h4>Fecha</h4>
+                                    </div>
+
+                                    <div id="hourinfo2"
+                                        class=" channelinfo dateinfo col-4 d-flex justify-content-center ms-2 align-items-center text-center">
+                                        <h4>Fecha</h4>
+                                    </div>
 
                                 </div>
-                                <div id="TvScreenContentBottom"
-                                    class="container-fluid row-2 d-flex justify-content-center align-items-center">
-                                    <div class=" col d-flex justify-content-center align-items-center">
-                                        <div id="TvScreenContentBottomTop"
-                                            class=" col-3 d-flex  justify-content-center align-items-center bv">
+                            </div>
+                            <div id="TvScreenContentMid"
+                                class="row-8 container-fluid d-flex justify-content-center align-items-center">
 
-                                        </div>
-                                        <div id="TvScreenContentBottommid"
-                                            class=" col-6 d-flex  justify-content-center align-items-center bv">
+                            </div>
+                            <div id="TvScreenContentBottom"
+                                class="container-fluid row-2 d-flex justify-content-center align-items-center">
+                                <div class=" col d-flex justify-content-center align-items-center">
+                                    <div id="TvScreenContentBottomTop"
+                                        class=" col-3 d-flex  justify-content-center align-items-center bv">
 
-                                        </div>
-                                        <div id="TvScreenContentBottomBottom"
-                                            class=" col-3 d-flex  justify-content-center align-items-center bv">
+                                    </div>
+                                    <div id="TvScreenContentBottommid"
+                                        class=" col-6 d-flex  justify-content-center align-items-center bv">
 
-                                        </div>
+                                    </div>
+
+                                    <div id="TvScreenContentBottomBottom"
+                                        class=" col-3 d-flex  justify-content-center align-items-center bv">
+
                                     </div>
                                 </div>
                             </div>
-                            <div id="ScreenInfo5" class=" row   justify-content-center  ">
-                                <div id="TvScreenContentTop"
-                                    class="row-2 container-fluid d-flex justify-content-center align-items-center">
-                                    <div class="col d-flex justify-content-center align-items-center">
-                                        <div class="channelinfo col-4 d-flex justify-content-center align-items-center me-5">
-                                            <h4>Canal Música</h4>
-                                        </div>
-                                        <div id="dateinfo4" class="channelinfo col-4 d-flex justify-content-center align-items-center">
-                                            <h4>Fecha</h4>
-                                        </div>
-                                   
+                        </div>
+                        <div id="ScreenInfo4" class=" row   justify-content-center  ">
+                            <div id="TvScreenContentTop"
+                                class="row-2 container-fluid d-flex justify-content-center align-items-center">
+                                <div class="col d-flex justify-content-center align-items-center">
+                                    <div
+                                        class="channelinfo col-4 d-flex justify-content-center align-items-center me-2">
+                                        <h4>Canal Deportes</h4>
                                     </div>
-                                </div>
-                                <div id="TvScreenContentMid"
-                                    class="row-8 container-fluid d-flex justify-content-center align-items-center">
-
-                                </div>
-                                <div id="TvScreenContentBottom"
-                                    class="container-fluid row-2 d-flex justify-content-center align-items-center">
-                                    <div class=" col d-flex justify-content-center align-items-center">
-                                        <div id="TvScreenContentBottomTop"
-                                            class=" col-3 d-flex  justify-content-center align-items-center bv">
-
-                                        </div>
-                                        <div id="TvScreenContentBottommid"
-                                            class=" col-6 d-flex  justify-content-center align-items-center bv">
-
-                                        </div>
-                                        <div id="TvScreenContentBottomBottom"
-                                            class=" col-3 d-flex  justify-content-center align-items-center bv">
-
-                                        </div>
+                                    <div id="dateinfo3"
+                                        class="channelinfo col-4 d-flex justify-content-center align-items-center">
+                                        <h4>Fecha</h4>
+                                    </div>
+                                    <div id="hourinfo3"
+                                        class=" channelinfo dateinfo col-4 d-flex justify-content-center ms-2 align-items-center text-center">
+                                        <h4>Fecha</h4>
                                     </div>
                                 </div>
                             </div>
+                            <div id="TvScreenContentMid"
+                                class="row-8 container-fluid d-flex justify-content-center align-items-center">
 
-                            <div id="ScreenInfo6" class=" row   justify-content-center  ">
-                                <div id="TvScreenContentTop"
-                                    class="row-2 container-fluid d-flex justify-content-center align-items-center">
-                                    <div class="col d-flex justify-content-center align-items-center">
-                                        <div class="channelinfo col-4 d-flex justify-content-center align-items-center me-5">
-                                            <h4>Canal Cine</h4>
-                                        </div>
-                                        <div id="dateinfo5" class="channelinfo col-4 d-flex justify-content-center align-items-center">
-                                            <h4>Fecha</h4>
-                                        </div>
-                                     
+                            </div>
+                            <div id="TvScreenContentBottom"
+                                class="container-fluid row-2 d-flex justify-content-center align-items-center">
+                                <div class=" col d-flex justify-content-center align-items-center">
+                                    <div id="TvScreenContentBottomTop"
+                                        class=" col-3 d-flex  justify-content-center align-items-center bv">
+
                                     </div>
-                                </div>
-                                <div id="TvScreenContentMid"
-                                    class="row-8 container-fluid d-flex justify-content-center align-items-center">
+                                    <div id="TvScreenContentBottommid"
+                                        class=" col-6 d-flex  justify-content-center align-items-center bv">
 
-                                </div>
-                                <div id="TvScreenContentBottom"
-                                    class="container-fluid row-2 d-flex justify-content-center align-items-center">
-                                    <div class=" col d-flex justify-content-center align-items-center">
-                                        <div id="TvScreenContentBottomTop"
-                                            class=" col-3 d-flex  justify-content-center align-items-center bv">
+                                    </div>
+                                    <div id="TvScreenContentBottomBottom"
+                                        class=" col-3 d-flex  justify-content-center align-items-center bv">
 
-                                        </div>
-                                        <div id="TvScreenContentBottommid"
-                                            class=" col-6 d-flex  justify-content-center align-items-center bv">
-
-                                        </div>
-                                        <div id="TvScreenContentBottomBottom"
-                                            class=" col-3 d-flex  justify-content-center align-items-center bv">
-
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="VolumeSection"class="row position-absolute justify-content-center align-items-center">
+                        </div>
+                        <div id="ScreenInfo5" class=" row   justify-content-center  ">
+                            <div id="TvScreenContentTop"
+                                class="row-2 container-fluid d-flex justify-content-center align-items-center">
+                                <div class="col d-flex justify-content-center align-items-center">
+                                    <div
+                                        class="channelinfo col-4 d-flex justify-content-center align-items-center me-2">
+                                        <h4>Canal Música</h4>
+                                    </div>
+                                    <div id="dateinfo4"
+                                        class="channelinfo col-4 d-flex justify-content-center align-items-center">
+                                        <h4>Fecha</h4>
+                                    </div>
+                                    <div id="hourinfo4"
+                                        class=" channelinfo dateinfo col-4 d-flex justify-content-center ms-2 align-items-center text-center">
+                                        <h4>Fecha</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="TvScreenContentMid"
+                                class="row-8 container-fluid d-flex justify-content-center align-items-center">
+
+                            </div>
+                            <div id="TvScreenContentBottom"
+                                class="container-fluid row-2 d-flex justify-content-center align-items-center">
+                                <div class=" col d-flex justify-content-center align-items-center">
+                                    <div id="TvScreenContentBottomTop"
+                                        class=" col-3 d-flex  justify-content-center align-items-center bv">
+
+                                    </div>
+                                    <div id="TvScreenContentBottommid"
+                                        class=" col-6 d-flex  justify-content-center align-items-center bv">
+
+                                    </div>
+                                    <div id="TvScreenContentBottomBottom"
+                                        class=" col-3 d-flex  justify-content-center align-items-center bv">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="ScreenInfo6" class=" row   justify-content-center  ">
+                            <div id="TvScreenContentTop"
+                                class="row-2 container-fluid d-flex justify-content-center align-items-center">
+                                <div class="col d-flex justify-content-center align-items-center">
+                                    <div
+                                        class="channelinfo col-4 d-flex justify-content-center align-items-center me-2">
+                                        <h4>Canal Cine</h4>
+                                    </div>
+                                    <div id="dateinfo5"
+                                        class="channelinfo col-4 d-flex justify-content-center align-items-center">
+                                        <h4>Fecha</h4>
+                                    </div>
+                                    <div id="hourinfo5"
+                                        class=" channelinfo dateinfo col-4 d-flex justify-content-center ms-2 align-items-center text-center">
+                                        <h4>Fecha</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="TvScreenContentMid"
+                                class="row-8 container-fluid d-flex justify-content-center align-items-center">
+
+                            </div>
+                            <div id="TvScreenContentBottom"
+                                class="container-fluid row-2 d-flex justify-content-center align-items-center">
+                                <div class=" col d-flex justify-content-center align-items-center">
+                                    <div id="TvScreenContentBottomTop"
+                                        class=" col-3 d-flex  justify-content-center align-items-center bv">
+
+                                    </div>
+                                    <div id="TvScreenContentBottommid"
+                                        class=" col-6 d-flex  justify-content-center align-items-center bv">
+
+                                    </div>
+                                    <div id="TvScreenContentBottomBottom"
+                                        class=" col-3 d-flex  justify-content-center align-items-center bv">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- VOLUME SECTION -->
+
+                        <div id="VolumeSection" class="row position-absolute justify-content-center align-items-center">
                             <div id="VolumeBar" class="VolBar     justify-content-center align-items-center bv">
                             </div>
                         </div>
-                        </div>
-                       
                     </div>
 
-                    <div id="TvSectionBottom" class="row-7 d-flex  justify-content-center  ">
-                      <div class="col d-flex  justify-content-center ">
+                </div>
+
+                <div id="TvSectionBottom" class="row-7 d-flex  justify-content-center  ">
+                    <div class="col d-flex  justify-content-center ">
                         <div id="TvSectionBottomLeft" class="col-5"></div>
                         <div id="TvSectionBottomMid" class="col-2"></div>
                         <div id="TvSectionBottomRight" class="col-5"></div>
-                      </div>
-                     
+                    </div>
 
-                    </div>
-                    <div id="TvSectionBase" class="row-1 d-flex  justify-content-center  ">
-                
-                    </div>
+
+                </div>
+                <div id="TvSectionBase" class="row-1 d-flex  justify-content-center  ">
+
                 </div>
             </div>
-            <div id="remoteControlSection" class="  row-xs-6 row-sm-6 col-md-4 col-lg-4 d-flex  justify-content-center align-items-center">
-                <div class="row d-flex  justify-content-center align-items-center">
-                    <div id="remoteControlSectionTop" class="row-8 d-flex  justify-content-center align-items-center">
-                        
-                    </div>
+        </div>
 
-                    <div id="remoteControlSectionBottom"
-                        class="row-4 d-flex  justify-content-center align-items-center">
-                        <div id="RemoteControl" class=" d-flex  justify-content-center ">
-                            <div id="remoteControlContent" class="row d-flex justify-content-center align-items-center">
-                                <div id="remoteControlContentTop"
-                                    class=" row-2 d-flex justify-content-center align-items-center">
-                                    <div class=" col d-flex justify-content-center align-items-center">
-                                        <div id="remoteControlContentTopLeft"
-                                            class=" col-5 d-flex justify-content-center align-items-center">
-                                            <div id="powerButton"
-                                                class="d-flex justify-content-center me-1 align-items-center buttonOnOff">
-                                                <i class="bi bi-power"></i>
-                                            </div>
+        <!-- REMOTE CONTROL SECTION  -->
 
-                                            <div id="SourceButton"
+        <!-- row-xs-6 row-sm-6 col-md-8 col-lg-8  to responsive structure -->
+
+        <div id="remoteControlSection"
+            class="  row-xs-6 row-sm-6 col-md-4 col-lg-4 d-flex  justify-content-center align-items-center">
+            <div class="row d-flex  justify-content-center align-items-center">
+                <div id="remoteControlSectionTop" class="row-8 d-flex  justify-content-center align-items-center">
+
+                </div>
+
+                <div id="remoteControlSectionBottom" class="row-4 d-flex  justify-content-center align-items-center">
+                    <div id="RemoteControl" class=" d-flex  justify-content-center ">
+                        <div id="remoteControlContent" class="row d-flex justify-content-center align-items-center">
+                            <div id="remoteControlContentTop"
+                                class=" row-2 d-flex justify-content-center align-items-center">
+                                <div class=" col d-flex justify-content-center align-items-center">
+                                    <div id="remoteControlContentTopLeft"
+                                        class=" col-5 d-flex justify-content-center align-items-center">
+                                        <div id="powerButton"
+                                            class="d-flex justify-content-center me-1 align-items-center buttonOnOff">
+                                            <i class="bi bi-power"></i>
+                                        </div>
+
+                                        <div id="SourceButton"
                                             class="d-flex justify-content-center  align-items-center buttonstyle">
                                             <i class="bi bi-info-lg"></i>
                                         </div>
-                                        </div>
-
-                                        <div id="remoteControlContentTopRight"
-                                            class=" col-7 d-flex justify-content-center align-items-center">
-                                        <div id="powerlight" class="  d-flex justify-content-center align-items-center powerlightoff">
-                                     
-                                        </div>
-                                        </div>
-
                                     </div>
+
+                                    <div id="remoteControlContentTopRight"
+                                        class=" col-7 d-flex justify-content-center align-items-center">
+                                        <div id="powerlight"
+                                            class="  d-flex justify-content-center align-items-center powerlightoff">
+
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div id="remoteControlContentMid"
-                                    class=" row-2 d-flex justify-content-center align-items-center">
-                                    <div class="col d-flex justify-content-center align-items-center">
-                                        <div class="col-6 d-flex justify-content-center align-items-center">
-                                            <div class="ChannelVolumePad row-12 me-2">
-                                                <div id="VolumePlus"
-                                                    class="buttonstyle d-flex justify-content-center align-items-center mb-1">
-                                                    +
+                            </div>
+                            <div id="remoteControlContentMid"
+                                class=" row-2 d-flex justify-content-center align-items-center">
+                                <div class="col d-flex justify-content-center align-items-center">
+                                    <div class="col-6 d-flex justify-content-center align-items-center">
+                                        <div class="ChannelVolumePad row-12 me-2">
+                                            <div id="VolumePlus"
+                                                class="buttonstyle d-flex justify-content-center align-items-center mb-1">
+                                                +
+                                            </div>
+                                            <div id="" class=" d-flex justify-content-center align-items-center">VOL
+                                            </div>
+                                            <div id="VolumeMinus"
+                                                class="buttonstyle d-flex justify-content-center align-items-center mt-1">
+                                                -
+                                            </div>
+                                        </div>
+                                        <div class="  col-6 d-flex justify-content-center align-items-center">
+                                            <div class="ChannelVolumePad row-12 ms-2">
+                                                <div id="ChannelPlus"
+                                                    class="buttonstyle d-flex justify-content-center align-items-center mb-1 text-center">
+                                                    <p>+</p>
                                                 </div>
-                                                <div id="" class=" d-flex justify-content-center align-items-center">VOL
+                                                <div id="" class=" d-flex justify-content-center align-items-center">CH
                                                 </div>
-                                                <div id="VolumeMinus"
+                                                <div id="ChannelMinus"
                                                     class="buttonstyle d-flex justify-content-center align-items-center mt-1">
                                                     -
                                                 </div>
                                             </div>
-                                            <div class="  col-6 d-flex justify-content-center align-items-center">
-                                                <div class="ChannelVolumePad row-12 ms-2">
-                                                    <div id="ChannelPlus"
-                                                        class="buttonstyle d-flex justify-content-center align-items-center mb-1 text-center">
-                                                         <p>+</p>
-                                                    </div>
-                                                    <div id=""
-                                                        class=" d-flex justify-content-center align-items-center">CH
-                                                    </div>
-                                                    <div id="ChannelMinus"
-                                                        class="buttonstyle d-flex justify-content-center align-items-center mt-1">
-                                                        -
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="remoteControlContentBottom"
-                                    class="container-fluid d-flex justify-content-center align-items-center">
-                                    <div class="col d-flex justify-content-center align-items-center">
-                                        <div class="col-6 d-flex justify-content-center align-items-center ">
-                                            <div class="row-12 ">
-                                                <div id="channel1"
-                                                    class="  button d-flex justify-content-center align-items-center  mb-2">
-                                                     <p>1</p>
-                                                </div>
-                                                <div id="channel2"
-                                                    class=" button d-flex justify-content-center align-items-center">
-                                                    2
-                                                </div>
-                                                <div id="channel3"
-                                                    class=" button d-flex justify-content-center align-items-center mt-2">
-                                                    3
-                                                </div>
+                            </div>
+                            <div id="remoteControlContentBottom"
+                                class="container-fluid d-flex justify-content-center align-items-center">
+                                <div class="col d-flex justify-content-center align-items-center">
+                                    <div class="col-6 d-flex justify-content-center align-items-center ">
+                                        <div class="row-12 ">
+                                            <div id="channel1"
+                                                class="  button d-flex justify-content-center align-items-center  mb-2">
+                                                <p>1</p>
+                                            </div>
+                                            <div id="channel2"
+                                                class=" button d-flex justify-content-center align-items-center">
+                                                2
+                                            </div>
+                                            <div id="channel3"
+                                                class=" button d-flex justify-content-center align-items-center mt-2">
+                                                3
                                             </div>
                                         </div>
-                                        <div class="col-6 d-flex justify-content-center align-items-center">
-                                            <div class="row-12 ">
-                                                <div id="channel4"
-                                                    class="button d-flex justify-content-center align-items-center mb-2">
-                                                    4
-                                                </div>
-                                                <div id="channel5"
-                                                    class="button d-flex justify-content-center align-items-center">5
-                                                </div>
-                                                <div id="channel6"
-                                                    class="button d-flex justify-content-center align-items-center mt-2">
-                                                    6
-                                                </div>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-center align-items-center">
+                                        <div class="row-12 ">
+                                            <div id="channel4"
+                                                class="button d-flex justify-content-center align-items-center mb-2">
+                                                4
+                                            </div>
+                                            <div id="channel5"
+                                                class="button d-flex justify-content-center align-items-center">5
+                                            </div>
+                                            <div id="channel6"
+                                                class="button d-flex justify-content-center align-items-center mt-2">
+                                                6
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
             </div>
+        </div>
 
-        
+
     </section>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

@@ -1,15 +1,239 @@
-html{
-background-color: black;
+/* COMMON ELEMENTS */
+
+html {
+    background-color: black;
 }
+
 body {
     margin: 0;
     padding: 0;
     background-color: black;
 }
-p{
-margin: 0;
-padding: 0;
+
+#content {
+
+    margin: 0px;
 }
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* TV SECTION */
+
+#TvScreen {
+
+    border: 1em solid rgb(67, 65, 65);
+    width: 50em;
+    height: 30em;
+
+    font-family: monospace;
+    color: rgb(67, 110, 1);
+}
+
+.ScreenBlack {
+    background-color: rgb(37, 37, 37);
+}
+
+.channelDefault {
+    background-image: url(./../img/guidechannel.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+
+}
+
+.TvBackgroundlightOff {
+    background-color: rgb(0, 0, 0);
+}
+
+.TvBackgroundlightOn {
+    background-image: url(./../img/flashinglight.gif);
+
+}
+
+/* SCREEN INFO SECTION */
+
+#ScreenInfo1 {
+
+    display: none;
+}
+
+#ScreenInfo2 {
+
+    display: none;
+}
+
+#ScreenInfo3 {
+
+    display: none;
+}
+
+#ScreenInfo4 {
+
+    display: none;
+}
+
+#ScreenInfo5 {
+
+    display: none;
+}
+
+#ScreenInfo6 {
+
+    display: none;
+}
+
+/* At the same time you add this class the Id screen info will be activated */
+.channel1 {
+    background-image: url(./../img/netflixgif.gif);
+
+
+    background-size: contain;
+
+
+
+    #ScreenInfo1 {
+        display: block;
+        animation: hideAnimationChannel1 0s ease-in 2s;
+        animation-fill-mode: forwards;
+    }
+
+
+
+}
+
+/* The id dissapears after 2 seconds  */
+
+@keyframes hideAnimationChannel1 {
+    to {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
+
+
+
+.channel2 {
+    background-image: url(./../img/hbogif.gif);
+    background-size: contain;
+
+
+    #ScreenInfo2 {
+
+        display: block;
+        animation: hideAnimationChannel2 0s ease-in 2s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes hideAnimationChannel2 {
+    to {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
+
+.channel3 {
+    background-image: url(./../img/amazonprimevideogif.gif);
+
+    background-size: contain;
+
+
+    #ScreenInfo3 {
+
+        display: block;
+        animation: hideAnimationChannel3 0s ease-in 2s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes hideAnimationChannel3 {
+    to {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
+
+.channel4 {
+    background-image: url(./../img/canaldeportesgif.gif);
+
+    background-size: contain;
+
+
+    #ScreenInfo4 {
+
+        display: block;
+        animation: hideAnimationChannel4 0s ease-in 2s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes hideAnimationChannel4 {
+    to {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
+
+.channel5 {
+    background-image: url(./../img/canalmusicagif.gif);
+
+    background-size: contain;
+
+
+    #ScreenInfo5 {
+
+        display: block;
+        animation: hideAnimationChannel5 0s ease-in 2s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes hideAnimationChannel5 {
+    to {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
+
+.channel6 {
+    background-image: url(./../img/canalcinegif.gif);
+
+    background-size: contain;
+
+    #ScreenInfo6 {
+
+        display: block;
+        animation: hideAnimationChannel6 0s ease-in 2s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes hideAnimationChannel6 {
+    to {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
+
+/* channel info background  */
+
+.channelinfo {
+    background-color: #ebebeb;
+}
+
+
+/* VOLUME SECTION  */
+
 #VolumeSection {
     margin-top: 18em;
 }
@@ -68,6 +292,8 @@ padding: 0;
     animation-fill-mode: forwards;
 }
 
+/* The volume bar dissapears after 2 seconds */
+
 @keyframes hideAnimationVolumeMuted {
     to {
         display: none;
@@ -108,42 +334,16 @@ padding: 0;
         display: none;
 
     }
-} 
-
-#content {
-   
-    margin: 0px;
 }
 
-
-
-.TvBackgroundlightOff {
-    background-color: rgb(0, 0, 0);
-}
-.TvBackgroundlightOn {
-    background-image: url(./../img/flashinglight.gif);
-    background-size: 50% auto;
-    background-repeat: repeat-x;
-}
-
-#TvScreen {
-
-    border: 1em solid rgb(67, 65, 65);
-    width: 50em;
-    height: 30em;
-    
-    font-family: monospace;
-    color: rgb(67, 110, 1);
-}
-
-
+/* TV SCREEN SECTION  */
 
 #TvScreenContentMid {
     height: 21em;
 }
 
 #TvSectionBottom {
-   
+
     height: 4em;
 }
 
@@ -151,21 +351,24 @@ padding: 0;
     background-color: rgb(67, 65, 65);
     width: 3em;
 }
- #TvSectionBase {
-   background-color: rgb(67, 65, 65);
-   height: 22px;
-   width: 39em;
 
-} 
+#TvSectionBase {
+    background-color: rgb(67, 65, 65);
+    height: 22px;
+    width: 39em;
 
+}
+
+/* REMOTE CONTROL SECTION */
 
 
 #remoteControlSectionTop {
-   
-    height: 18em;}
+
+    height: 18em;
+}
 
 #remoteControlSectionBottom {
-    
+
     padding: 1em;
 }
 
@@ -177,12 +380,14 @@ padding: 0;
     height: 25em;
     color: white;
 }
-.ChannelVolumePad{
+
+.ChannelVolumePad {
     background-color: #757575;
     padding: 0.4em;
     border-radius: 1em;
-   
+
 }
+
 .buttonOnOff {
     width: 1.9em;
     height: 1.9em;
@@ -190,7 +395,7 @@ padding: 0;
     border-radius: 50%;
     border: 1px solid black;
     transition: 0.2s;
-  
+
 }
 
 .buttonOnOff:hover {
@@ -201,25 +406,25 @@ padding: 0;
 
 .buttonOnOff:active {
     background-color: rgb(255, 0, 0);
-  
+
 }
 
-#powerlight{
-height: 0.5em;
-width: 0.5em;
-border-radius: 50%;
-border: 1px solid black;
-margin-left:5em;
+#powerlight {
+    height: 0.5em;
+    width: 0.5em;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-left: 5em;
 }
 
-.powerlightoff{
-background-color: grey;
+.powerlightoff {
+    background-color: grey;
 }
 
-.powerlighton{
-background-color: rgb(255, 0, 0);
- }
- 
+.powerlighton {
+    background-color: rgb(255, 0, 0);
+}
+
 .button {
     width: 2em;
     height: 2em;
@@ -232,14 +437,15 @@ background-color: rgb(255, 0, 0);
 }
 
 .button:hover {
-     background-color: rgb(88, 87, 87); 
+    background-color: rgb(88, 87, 87);
     cursor: pointer;
     transition: 0.2s;
 }
 
-.button:active{
+.button:active {
     background-color: rgb(46, 44, 44);
 }
+
 .buttonstyle {
     width: 2em;
     height: 2em;
@@ -256,184 +462,8 @@ background-color: rgb(255, 0, 0);
     transition: 0.2s;
 }
 
-.buttonstyle:active{
+/* Active function yhat changes de background button color when you press the button   */
+
+.buttonstyle:active {
     background-color: rgb(46, 44, 44);
 }
-
-
-
-
-
-.ScreenBlack {
-    background-color: rgb(37, 37, 37);
-}
-
-.channelDefault {
-    background-image: url(./../img/whitenoise.gif);
-}
-
-#ScreenInfo1 {
-
-    display: none;
-}
-
-#ScreenInfo2 {
-
-    display: none;
-}
-
-#ScreenInfo3 {
-
-    display: none;
-}
-
-#ScreenInfo4 {
-
-    display: none;
-}
-
-#ScreenInfo5 {
-
-    display: none;
-}
-
-#ScreenInfo6 {
-
-    display: none;
-}
-
-.channel1 {
-    background-image: url(./../img/netflixgif.gif);
-    background-size: 100% auto; 
-    /* background-color: beige; */
-
-
-    #ScreenInfo1 {
-        display: block;
-        animation: hideAnimationChannel1 0s ease-in 2s;
-        animation-fill-mode: forwards;
-    }
-
-
-
-}
-
-@keyframes hideAnimationChannel1 {
-    to {
-        display: none;
-        width: 0;
-        height: 0;
-    }
-}
-
-
-
-.channel2 {
-    background-image: url(./../img/hbogif.gif);
-    background-size: 100% auto; 
-    /* background-color: rgb(255, 255, 175); */
-
-    #ScreenInfo2 {
-
-        display: block;
-        animation: hideAnimationChannel2 0s ease-in 2s;
-        animation-fill-mode: forwards;
-    }
-}
-
-@keyframes hideAnimationChannel2 {
-    to {
-        display: none;
-        width: 0;
-        height: 0;
-    }
-}
-
-.channel3 {
-    background-image: url(./../img/amazonprimevideogif.gif);
-    background-size: 100% auto; 
-    /* background-color: rgb(255, 255, 129); */
-
-    #ScreenInfo3 {
-
-        display: block;
-        animation: hideAnimationChannel3 0s ease-in 2s;
-        animation-fill-mode: forwards;
-    }
-}
-
-@keyframes hideAnimationChannel3 {
-    to {
-        display: none;
-        width: 0;
-        height: 0;
-    }
-}
-
-.channel4 {
-    background-image: url(./../img/canaldeportesgif.gif);
-    background-size: 100% auto; 
-    /* background-color: rgb(247, 247, 73); */
-
-    #ScreenInfo4 {
-
-        display: block;
-        animation: hideAnimationChannel4 0s ease-in 2s;
-        animation-fill-mode: forwards;
-    }
-}
-
-@keyframes hideAnimationChannel4 {
-    to {
-        display: none;
-        width: 0;
-        height: 0;
-    }
-}
-
-.channel5 {
-    background-image: url(./../img/canalmusicagif.gif);
-    background-size: 100% auto; 
-    /* background-color: rgb(255, 255, 39); */
-
-    #ScreenInfo5 {
-
-        display: block;
-        animation: hideAnimationChannel5 0s ease-in 2s;
-        animation-fill-mode: forwards;
-    }
-}
-
-@keyframes hideAnimationChannel5 {
-    to {
-        display: none;
-        width: 0;
-        height: 0;
-    }
-}
-
-.channel6 {
-    background-image: url(./../img/canalcinegif.gif);
-    background-size: 100% auto; 
-    /* background-color: rgb(252, 252, 0); */
-
-    #ScreenInfo6 {
-
-        display: block;
-        animation: hideAnimationChannel6 0s ease-in 2s;
-        animation-fill-mode: forwards;
-    }
-}
-
-@keyframes hideAnimationChannel6 {
-    to {
-        display: none;
-        width: 0;
-        height: 0;
-    }
-}
-
-.channelinfo{
-background-color: #ebebeb;
-}
-
