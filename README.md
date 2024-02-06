@@ -40,15 +40,21 @@ Hi Geeks! I have made an interactive Smart TV with reactive buttons that affect 
 - **PowerButton:** Press the button to turn on or turn off the TV,when you turn on the TV you will see a guide  with all the channels that you can watch 🛎
 **Demo:**
 <img src="./img/powerbutton.gif" alt="index" />
+
 - **Red light LED:** Small LED that turns red when the Tv is ON 🔴
+
 - **InfoButton:** Press this button to see the channel info and the current hour ℹ
 <img src="./img/infochannel.gif" alt="index" />
+
 - **Volume buttons pad:** 2 buttons to increment and decrease the volume level 🔈   
 <img src="./img/volume-.gif" alt="index" />
+
 - **Channel buttons pad:** 2 buttons to switch the channels 🛎  
 <img src="./img/channel-.gif" alt="index" />
+
 - **Channel buttons:** 6 buttons if you want to visit an specific channel 🛎
 <img src="./img/channelbuttons.gif" alt="index" />
+
 - **Background light Tv:** Background white light that turns on when you turn ON the TV
 
 ## Bugs 🐛
