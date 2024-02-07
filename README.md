@@ -26,6 +26,9 @@ Hi Geeks! I have made an interactive Smart TV with reactive buttons that affect 
 
 ## Page 📺
 
+### Basic Structure
+<img src="./img/basicstructure.PNG" alt="index" />
+
 ### Index.html
 <img src="./img/IndexPC.PNG" alt="index" />
 
@@ -86,6 +89,15 @@ git clone https://github.com/FRR95/Proyecto-TV-interactiva.git
 ```
 
 ## Source Code 🔬
+**HTML**
+> [https://github.com/FRR95/Proyecto-TV-interactiva/blob/master/index.html]
+
+**CSS**
+> [https://github.com/FRR95/Proyecto-TV-interactiva/blob/master/css/styles.css]
+
+**JS**
+> [https://github.com/FRR95/Proyecto-TV-interactiva/blob/master/js/main.js]
+
 
 **HTML**
 ```sh
@@ -717,7 +729,8 @@ p {
 
 .channelDefault {
     background-image: url(./../img/guidechannel.jpg);
-    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 
 
@@ -729,6 +742,9 @@ p {
 
 .TvBackgroundlightOn {
     background-image: url(./../img/flashinglight.gif);
+    background-size: 127%;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
@@ -769,7 +785,9 @@ p {
     background-image: url(./../img/netflixgif.gif);
 
 
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 
 
@@ -797,7 +815,9 @@ p {
 
 .channel2 {
     background-image: url(./../img/hbogif.gif);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 
     #ScreenInfo2 {
@@ -819,7 +839,9 @@ p {
 .channel3 {
     background-image: url(./../img/amazonprimevideogif.gif);
 
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 
     #ScreenInfo3 {
@@ -841,7 +863,9 @@ p {
 .channel4 {
     background-image: url(./../img/canaldeportesgif.gif);
 
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 
     #ScreenInfo4 {
@@ -862,8 +886,9 @@ p {
 
 .channel5 {
     background-image: url(./../img/canalmusicagif.gif);
-
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 
     #ScreenInfo5 {
@@ -885,7 +910,9 @@ p {
 .channel6 {
     background-image: url(./../img/canalcinegif.gif);
 
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     #ScreenInfo6 {
 
